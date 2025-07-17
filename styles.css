@@ -692,6 +692,7 @@ img.rounded-circle {
 .list-violet li {
   color: #000000;
   font-weight: 200!important;
+  font-family: 'Mada', sans-serif; 
 }
 
 .precio-plan {
@@ -919,4 +920,7 @@ img.rounded-circle {
 .navbar.scrolled {
   background-color: #f8f7ff !important;
   transition: background-color 0.3s ease;
+}
+.text-align {
+  text-align: right;
 }
