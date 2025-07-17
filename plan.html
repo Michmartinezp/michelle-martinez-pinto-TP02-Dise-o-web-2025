@@ -44,10 +44,10 @@
     <!-- Menú de navegación -->
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav gap-1"> <!-- `gap-4` es Bootstrap, para espaciar -->
-        <li class="nav-item"><a class="nav-link " href="#">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link active" href="#">Suscripciones</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link " href="index.html#hero">INICIO</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#beneficios">BENEFICIOS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonios">OPINIONES</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">CONTACTO</a></li>
       </ul>
     </div>
 
@@ -174,7 +174,7 @@
 </section>
 
 <!-- card: 4 violetas -->
-<section class="section-spacing text-center py-5" style="background-color: #F8F7FF;">
+<section id="beneficios" class="section-spacing text-center py-5" style="background-color: #F8F7FF;">
   <div class="container">
    <h2 class="h2-custom mb-2">BENEFICIOS DE ÍCONO</h2>
 <p class="lead-custom mb-4">Te contamos por qué tenés que quedarte con Ícono.</p>
@@ -241,7 +241,7 @@
 
 
 <!-- TESTIMONIALS: Opiniones de clientes -->
-<section class="section-spacing text-center py-5" style="background-color: #F8F7FF;">
+<section id="testimonios" class="section-spacing text-center py-5" style="background-color: #F8F7FF;">
   <div class="bg-light">
   <div class="container">
   <h2 class="h2-custom">OPINIONES DE SUSCRIPTORES</h2>
@@ -296,7 +296,7 @@
 
 
   <!-- CONTACT FORM: Formulario de contacto -->
-<section class="bg-contact">
+<section id="contacto" class="bg-contact">
   <div class="section-spacing container text-center">
     <h2 class="h2-custom">¿BRINDAMOS? HABLEMOS</h2>
     <p class="p-custom">Ya sea para contarnos algo lindo o hacer una consulta</p>
@@ -381,3 +381,10 @@
 <!-- /FOOTER -->
  </body>
 </html>
+
+<script>
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>

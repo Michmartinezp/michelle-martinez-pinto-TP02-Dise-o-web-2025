@@ -45,10 +45,10 @@
     <!-- Menú de navegación -->
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav gap-1"> <!-- `gap-4` es Bootstrap, para espaciar -->
-        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Suscripciones</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">INICIO</a></li>
+       <a class="nav-link" href="#suscripciones">SUSCRIPCIONES</a>
+       <a class="nav-link" href="#nosotros">NOSOTROS</a>
+       <a class="nav-link" href="#contacto">CONTACTO</a>
       </ul>
     </div>
 
@@ -63,7 +63,7 @@
 </nav>
 
 <!-- HERO: Sección de portada con llamado a la acción -->
-<section class="hero-section d-flex align-items-center" style="min-height: 100vh; padding-top: 100px;">
+<section id="hero" class="hero-section d-flex align-items-center" style="min-height: 100vh; padding-top: 100px;">
   <div class="container section-spacing">
     <div class="row align-items-center">
     <!-- Texto principal -->
@@ -123,7 +123,7 @@
 <!-- /nosotros -->
 
  <!-- Sección completa con fondo extendido -->
-<section class="section-spacing bg-light-custom">
+<section id="nosotros" class="section-spacing bg-light-custom">
 
   <!-- Contenedor interno para centrar contenido -->
   <div class="container text-center">
@@ -367,7 +367,7 @@
         <img src="imagenes-nuevas/comentarios.png" class="no-hover" alt="Clientes Felices" class="benefit-icon">
         <div class="text-end">
           <strong>Miles de Clientes Felices</strong><br>
-          <a href="#" class="benefit-link">Leé sus comentarios</a>
+          <a href="plan.html#testimonios" class="benefit-link">Leé sus comentarios</a>
         </div>
       </div>
 
@@ -395,7 +395,7 @@
 
 
 <!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
-<section class="text-center py-5 bg-purple" style="background-color: #8400FF;">
+<section id="suscripciones" class="text-center py-5 bg-purple" style="background-color: #8400FF;">
   <div class="container section-spacing">
     <h2 class="section-title h2-custom">ELEGÍ TU SUSCRIPCIÓN</h2>
     <p class="section-subtitle p-custom">Tres formas de suscribirte. Tres maneras de disfrutar.</p>
@@ -601,7 +601,7 @@
 
 
 <!-- CONTACT FORM: Formulario de contacto -->
-<section class="bg-contact">
+<section id="contacto" class="bg-contact">
   <div class="section-spacing container text-center">
     <h2 class="h2-custom">¿BRINDAMOS? HABLEMOS</h2>
     <p class="p-custom">Ya sea para contarnos algo lindo o hacer una consulta</p>
